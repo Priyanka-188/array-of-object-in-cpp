@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class employee
+{
+    int id;
+    int salary;
+public:
+    void setid()
+    {
+        salary = 1000;
+        cout<<"ENter the id of the employee"<<endl;
+        cin>>id;
+    }
+    void getid()
+    {
+        cout<< "The id of the employee is"<<id<<endl<<endl;
+    }
+} ;
+int main()
+{
+    int n;
+    cout<<"Enter number of employee";
+    cin>>n;
+    employee fb[n];
+    for(int i=0;i<n;i++)
+    {
+        fb[i].setid();
+        fb[i].getid();
+    }
+
+    return 0;
+}
